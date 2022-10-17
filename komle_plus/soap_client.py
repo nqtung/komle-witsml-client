@@ -7,14 +7,14 @@ from suds.client import Client
 from suds.transport import Reply
 from suds.transport.http import HttpAuthenticated
 
-if 'komle.bindings.v1411.write' in sys.modules:
+if 'komle_plus.bindings.v1411.write' in sys.modules:
     # Witsml uses the same namespace for each schema
     # So for now check what binding is in use
-    from komle.bindings.v1411.write import witsml
+    from komle_plus.bindings.v1411.write import witsml
 else:
     # Default to import read_bindings
-    from komle.bindings.v1411.api import cap_server
-    from komle.bindings.v1411.read import witsml
+    from komle_plus.bindings.v1411.api import cap_server
+    from komle_plus.bindings.v1411.read import witsml
 
 
 class RequestsTransport(HttpAuthenticated):

@@ -1,7 +1,7 @@
 import os
 from typing import Union
 
-from komle.bindings import uom
+from komle_plus.bindings import uom
 
 with open(
     os.path.join(os.path.dirname(__file__), "witsmlUnitDict.xml"), "r"

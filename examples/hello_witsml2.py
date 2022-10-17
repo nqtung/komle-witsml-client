@@ -12,8 +12,8 @@ import os
 import pandas as pd  # Not included in komle setup.py
 
 from komle import utils as ku
-from komle.bindings.v20 import witsml
-from komle.uom_converter import conversion_factor, get_unit
+from komle_plus.bindings.v20 import witsml
+from komle_plus.uom_converter import conversion_factor, get_unit
 
 sample_path = os.path.join(
     os.path.dirname(os.path.realpath(__file__)), "..", "tests", "samples"
