@@ -8,7 +8,7 @@ At work I use some closed source tools that use Komle - some of which I keep. Th
 
 Some of the features are:
 
-* WITSML data model bindings for schema v1.4.1.1 and v2.0
+* WITSML data model bindings for schema v1.3.1.1, v1.4.1.0, v1.4.1.1 and v2.0
     - **Note** just one version can be used in the same runtime, due to namespace collision
 * WITSML to dict, for use in a pandas dataframe or json
 * Unit converter based on [witsmlUnitDict](http://w3.energistics.org/schema/WITSML_v1.4.1.1_Data_Schema/witsml_v1.4.1.1_data/ancillary/witsmlUnitDict.xml)
