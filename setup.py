@@ -28,7 +28,7 @@ setup(
         "komle_plus": ["WMLS.WSDL", "witsmlUnitDict.xml"],
     },
     install_requires=[
-        "suds-py3==1.4.5",
+        "suds-py3==1.4.5.0",
         "PyXB-X==1.2.6",
         "requests==2.27.1",
         "xmltodict==0.12.0",
