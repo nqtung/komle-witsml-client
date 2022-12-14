@@ -13,7 +13,7 @@ import subprocess
 
 version = 'v1.3.1.1'
 host = f'https://raw.githubusercontent.com/HemersonRafael/witsml_files/main/schemas/WITSML_{version}_Data_Schema'
-root = 'komle_plus'
+root = 'komle_witslm_client'
 package_name = f'bindings/v1311'
 module_name = 'witsml'
 

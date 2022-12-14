@@ -14,7 +14,7 @@ import subprocess
 version = 'v1.4.1.0'
 host = f'https://raw.githubusercontent.com/HemersonRafael/witsml_files/main/schemas/WITSML_{version}_Data_Schema/witsml_{version[: -2]}_data'
 targets = [ 'delete', 'read', 'update', 'write']
-root = 'komle_plus'
+root = 'komle_witslm_client'
 module_name = 'witsml'
 
 for target in targets:

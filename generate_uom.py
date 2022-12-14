@@ -13,7 +13,7 @@ import subprocess
 
 
 host = f'https://raw.githubusercontent.com/HemersonRafael/witsml_files/main/schemas/uom/units20/'
-root = 'komle_plus'
+root = 'komle_witslm_client'
 package_name = f'bindings'
 module_name = 'uom'
 

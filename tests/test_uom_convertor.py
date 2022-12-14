@@ -1,6 +1,6 @@
 import pytest
 
-from komle_plus.uom_converter import conversion_factor
+from komle_witslm_client.uom_converter import conversion_factor
 
 
 @pytest.mark.parametrize(

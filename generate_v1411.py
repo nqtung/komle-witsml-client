@@ -16,7 +16,7 @@ version = 'v1.4.1.1'
 host = f'https://raw.githubusercontent.com/HemersonRafael/witsml_files/main/schemas/WITSML_{version}_Data_Schema/witsml_{version}_data'
 targets = [ 'delete', 'read', 'update', 'write']
 module_name = 'witsml'
-root = 'komle_plus'
+root = 'komle_witslm_client'
 
 for target in targets:
     schema = f'generated_{target}_schemas'
