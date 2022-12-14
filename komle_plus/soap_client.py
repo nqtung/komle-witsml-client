@@ -368,3 +368,179 @@ class StoreClient:
         )
 
         return _parse_reply(reply_wells)
+
+    def get_rigs(
+        self, 
+        q_rig: witsml.obj_rig,
+        returnElements: str='id-only',
+        OptionsIn: str = "",
+    ) -> witsml.rigs:
+        '''Get Rigs from a witsml store server
+    
+        The default is only to return id-only, change to all when you know what rig to get.
+    
+    
+        Args:
+            q_rig (witsml.obj_rig): A query rig specifing objects to return, can be an empty rig
+            returnElements (str): String describing data to get on of [all, id-only, header-only, data-only, station-location-only
+                                                                       latest-change-only, requested]
+        Returns:
+            witsml.rigs: rigs
+        
+        Raises:
+            StoreException: If the soap server replies with an error
+            pyxb.exception: If the reply is empty or the document fails to validate a pyxb exception is raised
+        '''
+    
+        q_rigs = witsml.rigs(version=witsml.__version__)
+    
+        q_rigs.append(q_rig)
+    
+        reply_rigs = self.soap_client.service.WMLS_GetFromStore(
+            'rig',
+            q_rigs.toxml(),
+            OptionsIn=f'returnElements={returnElements};{OptionsIn}',
+        )
+    
+        return _parse_reply(reply_rigs)
+
+    def get_wbGeometrys(
+        self, 
+        q_wbGeometry: witsml.obj_wbGeometry,
+        returnElements: str='id-only',
+        OptionsIn: str = "",
+    ) -> witsml.wbGeometrys:
+        '''Get wbGeometry from a witsml store server
+    
+        The default is only to return id-only, change to all when you know what wbGeometry to get.
+    
+    
+        Args:
+            q_wbGeometry (witsml.obj_wbGeometry): A query wbGeometry specifing objects to return, can be an empty wbGeometry
+            returnElements (str): String describing data to get on of [all, id-only, header-only, data-only, station-location-only
+                                                                       latest-change-only, requested]
+        Returns:
+            witsml.wbGeometrys: wbGeometrys
+        
+        Raises:
+            StoreException: If the soap server replies with an error
+            pyxb.exception: If the reply is empty or the document fails to validate a pyxb exception is raised
+        '''
+    
+        q_wbGeometrys = witsml.wbGeometrys(version=witsml.__version__)
+    
+        q_wbGeometrys.append(q_wbGeometry)
+    
+        reply_wbGeometrys = self.soap_client.service.WMLS_GetFromStore(
+            'wbGeometry',
+            q_wbGeometrys.toxml(),
+            OptionsIn=f'returnElements={returnElements};{OptionsIn}',
+        )
+    
+        return _parse_reply(reply_wbGeometrys)
+
+    def get_tubulars(
+        self, 
+        q_tubular: witsml.obj_tubular,
+        returnElements: str='id-only',
+        OptionsIn: str = "",
+    ) -> witsml.tubulars:
+        '''Get Tubulars from a witsml store server
+    
+        The default is only to return id-only, change to all when you know what tubular to get.
+    
+    
+        Args:
+            q_tubular (witsml.obj_tubular): A query rig specifing objects to return, can be an empty tubular
+            returnElements (str): String describing data to get on of [all, id-only, header-only, data-only, station-location-only
+                                                                       latest-change-only, requested]
+        Returns:
+            witsml.tubulars: tubulars
+        
+        Raises:
+            StoreException: If the soap server replies with an error
+            pyxb.exception: If the reply is empty or the document fails to validate a pyxb exception is raised
+        '''
+    
+        q_tubulars = witsml.tubulars(version=witsml.__version__)
+    
+        q_tubulars.append(q_tubular)
+    
+        reply_tubulars = self.soap_client.service.WMLS_GetFromStore(
+            'tubular',
+            q_tubulars.toxml(),
+            OptionsIn=f'returnElements={returnElements};{OptionsIn}',
+        )
+    
+        return _parse_reply(reply_tubulars)
+
+    def get_stimJobs(
+        self, 
+        q_stimJob: witsml.obj_stimJob,
+        returnElements: str='id-only',
+        OptionsIn: str = "",
+    ) -> witsml.stimJobs:
+        '''Get StimJobs from a witsml store server
+    
+        The default is only to return id-only, change to all when you know what StimJob to get.
+    
+    
+        Args:
+            q_stimJob (witsml.obj_stimJob): A query rig specifing objects to return, can be an empty StimJob
+            returnElements (str): String describing data to get on of [all, id-only, header-only, data-only, station-location-only
+                                                                       latest-change-only, requested]
+        Returns:
+            witsml.stimJobs: stimJobs
+        
+        Raises:
+            StoreException: If the soap server replies with an error
+            pyxb.exception: If the reply is empty or the document fails to validate a pyxb exception is raised
+        '''
+    
+        q_stimJobs= witsml.stimJobs(version=witsml.__version__)
+    
+        q_stimJobs.append(q_stimJob)
+    
+        reply_stimJobs = self.soap_client.service.WMLS_GetFromStore(
+            'stimJob',
+            q_stimJobs.toxml(),
+            OptionsIn=f'returnElements={returnElements};{OptionsIn}',
+        )
+        # print(reply_stimJobs)
+        return _parse_reply(reply_stimJobs)
+
+
+    def get_cementJobs(
+        self, 
+        q_cementJob: witsml.obj_cementJob,
+        returnElements: str='id-only',
+        OptionsIn: str = "",
+    ) -> witsml.cementJobs:
+        '''Get CementJobs from a witsml store server
+    
+        The default is only to return id-only, change to all when you know what CementJob to get.
+    
+    
+        Args:
+            q_cementJob (witsml.obj_cementJob): A query rig specifing objects to return, can be an empty CementJob
+            returnElements (str): String describing data to get on of [all, id-only, header-only, data-only, station-location-only
+                                                                       latest-change-only, requested]
+        Returns:
+            witsml.cementJobs: cementJobs
+        
+        Raises:
+            StoreException: If the soap server replies with an error
+            pyxb.exception: If the reply is empty or the document fails to validate a pyxb exception is raised
+        '''
+    
+        q_cementJobs = witsml.cementJobs(version=witsml.__version__)
+    
+        q_cementJobs.append(q_cementJob)
+    
+        reply_cementJobs = self.soap_client.service.WMLS_GetFromStore(
+            'cementJob',
+            q_cementJobs.toxml(),
+            OptionsIn=f'returnElements={returnElements};{OptionsIn}',
+        )
+    
+        return _parse_reply(reply_cementJobs)
