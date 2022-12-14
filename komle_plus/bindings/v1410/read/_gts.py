@@ -24,7 +24,7 @@ _PyXBVersion = '1.2.6'
 _module_typeBindings = pyxb.utils.utility.Object()
 
 # Import bindings for namespaces imported into schema
-import komle_plus.bindings/v1410/read._nsgroup as _ImportedBinding_bindingsv1410read__nsgroup
+import komle_plus.bindings.v1410.read._nsgroup as _ImportedBinding_bindingsv1410read__nsgroup
 
 # NOTE: All namespace declarations are reserved within the binding
 Namespace = pyxb.namespace.NamespaceForURI('http://www.isotc211.org/2005/gts', create_if_missing=True)
@@ -81,6 +81,6 @@ def CreateFromDOM (node, fallback_namespace=None, default_namespace=None):
         fallback_namespace = Namespace.fallbackNamespace()
     return pyxb.binding.basis.element.AnyCreateFromDOM(node, fallback_namespace)
 
-from komle_plus.bindings/v1410/read._nsgroup import TM_PeriodDuration # {http://www.isotc211.org/2005/gts}TM_PeriodDuration
-from komle_plus.bindings/v1410/read._nsgroup import TM_Primitive_PropertyType # {http://www.isotc211.org/2005/gts}TM_Primitive_PropertyType
-from komle_plus.bindings/v1410/read._nsgroup import TM_PeriodDuration_PropertyType # {http://www.isotc211.org/2005/gts}TM_PeriodDuration_PropertyType
+from komle_plus.bindings.v1410.read._nsgroup import TM_PeriodDuration # {http://www.isotc211.org/2005/gts}TM_PeriodDuration
+from komle_plus.bindings.v1410.read._nsgroup import TM_Primitive_PropertyType # {http://www.isotc211.org/2005/gts}TM_Primitive_PropertyType
+from komle_plus.bindings.v1410.read._nsgroup import TM_PeriodDuration_PropertyType # {http://www.isotc211.org/2005/gts}TM_PeriodDuration_PropertyType

@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0"?>
+
 
 	<!--
 	This file is distributed under the POSC License Agreement at
@@ -15,7 +16,7 @@
     xmlns="http://www.posc.org/schemas" 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.posc.org/schemas
-           http://www.posc.org/messages/units20/Units.xsd">
+           http://w3.energistics.org/uom/units20/Units.xsd">
 
   <DocumentInformation>
     <DocumentName>

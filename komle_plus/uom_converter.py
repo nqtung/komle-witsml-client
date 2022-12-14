@@ -3,10 +3,12 @@ from typing import Union
 
 from komle_plus.bindings import uom
 
-with open(
-    os.path.join(os.path.dirname(__file__), "witsmlUnitDict.xml"), "r"
-) as uom_file:
-    WITSM_UNIT_DICT = uom.CreateFromDocument(uom_file.read())
+uom_file_path =  os.path.join(os.path.dirname(__file__), "witsmlUnitDict.xml")
+with open(uom_file_path, "r") as uom_file: 
+    uom_xml_content = uom_file.read()
+    # print(f"uom_file: {uom_file_path}")
+    # print(f"uom_file: {uom_xml_content}")
+    WITSM_UNIT_DICT = uom.CreateFromDocument(uom_xml_content)
 
 
 def __get_factor(unit: uom.unitDictionaryType):

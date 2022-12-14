@@ -13,7 +13,7 @@ if 'komle_plus.bindings.v1411.write' in sys.modules:
     from komle_plus.bindings.v1411.write import witsml
 else:
     # Default to import read_bindings
-    from komle_plus.bindings.v1411.api import cap_server
+    from komle_plus.bindings.v1411.api import witsml as cap_server
     from komle_plus.bindings.v1411.read import witsml
 
 

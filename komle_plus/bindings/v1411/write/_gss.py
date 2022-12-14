@@ -24,7 +24,7 @@ _PyXBVersion = '1.2.6'
 _module_typeBindings = pyxb.utils.utility.Object()
 
 # Import bindings for namespaces imported into schema
-import komle_plus.bindings/v1411/write._nsgroup as _ImportedBinding_bindingsv1411write__nsgroup
+import komle_plus.bindings.v1411.write._nsgroup as _ImportedBinding_bindingsv1411write__nsgroup
 
 # NOTE: All namespace declarations are reserved within the binding
 Namespace = pyxb.namespace.NamespaceForURI('http://www.isotc211.org/2005/gss', create_if_missing=True)
@@ -81,5 +81,5 @@ def CreateFromDOM (node, fallback_namespace=None, default_namespace=None):
         fallback_namespace = Namespace.fallbackNamespace()
     return pyxb.binding.basis.element.AnyCreateFromDOM(node, fallback_namespace)
 
-from komle_plus.bindings/v1411/write._nsgroup import GM_Point_PropertyType # {http://www.isotc211.org/2005/gss}GM_Point_PropertyType
-from komle_plus.bindings/v1411/write._nsgroup import GM_Object_PropertyType # {http://www.isotc211.org/2005/gss}GM_Object_PropertyType
+from komle_plus.bindings.v1411.write._nsgroup import GM_Point_PropertyType # {http://www.isotc211.org/2005/gss}GM_Point_PropertyType
+from komle_plus.bindings.v1411.write._nsgroup import GM_Object_PropertyType # {http://www.isotc211.org/2005/gss}GM_Object_PropertyType
