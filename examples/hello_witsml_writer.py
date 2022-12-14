@@ -1,11 +1,11 @@
 #%% Import the write bindings
-# Note that from komle.bindings.v1411.read can not be used
+# Note that from komle_plus.bindings.v1411.read can not be used
 # in the same session as they use the same namespace
 
 from datetime import datetime
 
 from komle import utils as ku
-from komle.bindings.v1411.write import witsml
+from komle_plus.bindings.v1411.write import witsml
 
 # %% Create logs, a container for obj_log
 

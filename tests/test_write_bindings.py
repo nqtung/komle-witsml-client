@@ -18,7 +18,7 @@ def setup():
 
 
 def test_logs():
-    from komle.bindings.v1411.write import witsml
+    from komle_plus.bindings.v1411.write import witsml
 
     logs = witsml.logs(version=witsml.__version__)
     log = witsml.obj_log(
@@ -36,7 +36,7 @@ def test_logs():
 
 
 def test_trajecorys():
-    from komle.bindings.v1411.write import witsml
+    from komle_plus.bindings.v1411.write import witsml
 
     trajs = witsml.trajectorys(version=witsml.__version__)
 

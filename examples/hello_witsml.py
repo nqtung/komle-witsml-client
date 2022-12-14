@@ -14,9 +14,9 @@ import pyxb
 from lxml import etree
 
 from komle import utils as ku
-from komle.bindings.v1411.read import witsml
-from komle.soap_client import StoreClient
-from komle.uom_converter import conversion_factor, get_unit
+from komle_plus.bindings.v1411.read import witsml
+from komle_plus.soap_client import StoreClient
+from komle_plus.uom_converter import conversion_factor, get_unit
 
 sample_path = os.path.join(
     os.path.dirname(os.path.realpath(__file__)), "..", "tests", "samples"

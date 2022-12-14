@@ -3,8 +3,8 @@ from datetime import datetime
 
 import pytest
 
-from komle import utils as ku
-from komle.bindings.v1411.read import witsml
+from komle_plus import utils as ku
+from komle_plus.bindings.v1411.read import witsml
 
 sample_path = os.path.join(
     os.path.dirname(os.path.realpath(__file__)), 'samples'
