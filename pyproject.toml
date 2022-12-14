@@ -2,7 +2,7 @@
 name = "komle-plus"
 version = "0.3.3"
 description = "A python library to help with WITSML v1.3.1.1, v1.4.1.0, v1.4.1.1 and v2.0"
-authors = ["Hemerson Rafael <rafaelpontes1995@gmail.com>"]
+authors = ["Tung Nguyen <@gmail.com>"]
 packages = [
     { include = "komle_witslm_client" },
 ]
