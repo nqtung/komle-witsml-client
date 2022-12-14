@@ -1,9 +1,11 @@
 name: Continuous Integration
 on:
+  # pull_request:
+  #   branches:
+  #     - master
   pull_request:
     branches:
-      - master
-  push:
+      - develop
 jobs:
   build:
     runs-on: ubuntu-latest 

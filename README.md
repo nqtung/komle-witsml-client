@@ -26,7 +26,7 @@ Some of the features are:
   * [GNU Make >= 4.3](https://www.gnu.org/software/make/)
 
 ``` bash
-git clone https://github.com/HemersonRafael/komle-plus
+git clone https://github.com/nqtung/komle-witsml-client/
 ```
 
 if the repo is cloned
@@ -36,7 +36,7 @@ make install
 ```
 ## Instalation by PyPI
 ``` bash
-pip install komle-plus
+pip install komle-witslm-client
 ```
 ## Getting started
 
