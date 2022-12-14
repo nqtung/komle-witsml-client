@@ -13,10 +13,10 @@ import pandas as pd  # Not included in komle setup.py
 import pyxb
 from lxml import etree
 
-from komle import utils as ku
-from komle_plus.bindings.v1411.read import witsml
-from komle_plus.soap_client import StoreClient
-from komle_plus.uom_converter import conversion_factor, get_unit
+from komle_witslm_client import utils as ku
+from komle_witslm_client.bindings.v1411.read import witsml
+from komle_witslm_client.soap_client import StoreClient
+from komle_witslm_client.uom_converter import conversion_factor, get_unit
 
 sample_path = os.path.join(
     os.path.dirname(os.path.realpath(__file__)), "..", "tests", "samples"

@@ -13,7 +13,7 @@ import subprocess
 
 version = 'v2.0'
 host = f'https://raw.githubusercontent.com/HemersonRafael/witsml_files/main/schemas/WITSML_{version}_Data_Schema/energyml/data/witsml/{version}/xsd_schemas/'
-root = 'komle_plus'
+root = 'komle_witslm_client'
 package_name = 'bindings/v20'
 module_name = 'witsml'
 
