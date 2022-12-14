@@ -12,17 +12,17 @@ except Exception:
     long_description = ""
 
 setup(
-    name="komle-plus",
+    name="komle-witslm-client",
     version="0.3.3",
     license="Apache-2.0 License",
     description="A python library to help with WITSML v1.3.1.1, v1.4.1.0, v1.4.1.1 and v2.0",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/HemersonRafael/komle-plus",
+    url="https://github.com/nqtung/komle-witsml-client",
     keywords=["pytohn", "soap-client", "witsml"],
     packages=find_packages(exclude=("tests",)),
-    author="HemersonRafael",
-    author_email="rafaelpontes1995@gmail.com",
+    author="Tung Nguyen",
+    author_email="tungnq@gmail.com",
     include_package_data=True,
     package_data={
         "komle_plus": ["WMLS.WSDL", "witsmlUnitDict.xml"],
