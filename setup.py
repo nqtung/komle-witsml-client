@@ -13,7 +13,7 @@ except Exception:
 
 setup(
     name="komle-witslm-client",
-    version="0.3.4.1",
+    version="0.3.4.2",
     license="Apache-2.0 License",
     description="A python library to help with WITSML v1.3.1.1, v1.4.1.0, v1.4.1.1 and v2.0",
     long_description=long_description,
