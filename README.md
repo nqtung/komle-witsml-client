@@ -1,6 +1,6 @@
-# Komle Plus
+# Komle WITSML Client
 
-komle-plus is fork from [komle](https://github.com/kle043/komle), a python library for WITSML, uses [PyXB-E](https://github.com/renalreg/PyXB-X) to marshal/unmarshal xml files according to the schemas.
+komle-witsml-client is forked from [komle-plus](https://github.com/HemersonRafael/komle-plus) with based from [komle](https://github.com/kle043/komle), a python library for WITSML, uses [PyXB-E](https://github.com/renalreg/PyXB-X) to marshal/unmarshal xml files according to the schemas.
 
 What is this fork for?:
 
